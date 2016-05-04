@@ -1,0 +1,746 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0153)file:///C:/Documents%20and%20Settings/Administrator/My%20Documents/Downloads/Linux%E7%8E%AF%E5%A2%83%E4%B8%8BGIT%E5%88%9D%E6%AC%A1%E4%BD%BF%E7%94%A8.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="file://hm.baidu.com/hm.js?d86954201130d615136257dde062a503"></script><script src="./Linux环境下GIT初次使用_files/hm(1).js"></script><script type="text/javascript">
+        if (navigator.userAgent.indexOf("iPhone") > 0 || navigator.userAgent.indexOf("Android") > 0 || navigator.userAgent.indexOf("iPod") > 0) {  //手机端跳转
+            var patt1 = new RegExp("[0-9]*_[0-9]*");
+            var url = patt1.exec(location.href);
+            if (url != "") {
+                self.location = "http://www.360doc.cn/article/" + url + ".html";
+            }
+        }
+    </script>
+    <meta content="360doc" name="classification"><link rel="alternate" media="only screen and (max-width: 640px)" href="http://www.360doc.cn/article/10648726_462911761.html"><meta content="git,github,etl" name="keywords"><meta content="Linux环境下GIT初次使用" name="description"><meta name="mobile-agent" content="format=html5;url=http://www.360doc.cn/article/10648726_462911761.html"><meta content="[root@ora11g etl]# ssh -T git@github.comHi toughhou![root@ora11g etl]# git remote -vorigin  https://github.com/toughhou/etl.git (fetch)origin  https://github.com/toughhou/etl.git (push)[root@ora11g etl]# git push -u origin9 masterUsername for &#39;&#39;https://github.com&#39;&#39;: toughhouPassword for &#39;&#39;https://toughhou@github.com&#39;&#39;: Branch master set up to track remote branch master from origin9." name="360docabstract"><meta content="www.360doc.com" name="author"><title>
+	Linux环境下GIT初次使用
+</title>
+    <script type="text/javascript" language="javascript">
+        window.onerror = ignoreError;
+        function ignoreError() {
+            return true;
+        }
+    </script>
+    <script src="./Linux环境下GIT初次使用_files/jquery1.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./Linux环境下GIT初次使用_files/indexhead.js" type="text/javascript" charset="utf-8"></script><script type="text/javascript" src="./Linux环境下GIT初次使用_files/chat.js"></script><script type="text/javascript" src="./Linux环境下GIT初次使用_files/chatuserlist.js"></script><link rel="stylesheet" type="text/css" href="./Linux环境下GIT初次使用_files/chat.css"><script type="text/javascript" src="./Linux环境下GIT初次使用_files/chat(1).js"></script><script type="text/javascript" src="./Linux环境下GIT初次使用_files/chatuserlist(1).js"></script><link rel="stylesheet" type="text/css" href="./Linux环境下GIT初次使用_files/chat(2).css">
+    <script src="./Linux环境下GIT初次使用_files/showarticlefollow20160329.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./Linux环境下GIT初次使用_files/jQuery.md5.min.js" type="text/javascript" charset="utf-8"></script>
+    
+    <script type="text/javascript">
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?d86954201130d615136257dde062a503";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <link rel="stylesheet" type="text/css" href="./Linux环境下GIT初次使用_files/wzhead-cleaned.css"><link rel="stylesheet" type="text/css" href="./Linux环境下GIT初次使用_files/newArticle_new.css"><script src="./Linux环境下GIT初次使用_files/share.js"></script><script type="text/javascript" src="./Linux环境下GIT初次使用_files/EssayforIE120425.js"></script><link href="about:blank" rel="styleSheet" type="text/css"><script type="text/javascript" charset="gbk" src="./Linux环境下GIT初次使用_files/ui"></script><script language="Javascript" type="text/javascript" src="./Linux环境下GIT初次使用_files/GetArtInfo20130912NewV.ashx" id="jsonp1462367935946"></script><script src="./Linux环境下GIT初次使用_files/share(1).js"></script><link href="about:blank" rel="styleSheet" type="text/css"></head>
+<body onmouseup="setDragEnd()" onclick="delAllDiv(event)">
+    
+    <script type="text/javascript">
+        var baiduImagePlus = {
+            noLogo: true,
+            unionId: 'u2617463',
+            maxMiniAdCount: 0,
+            formList: [{ formId: 10 }]
+        };
+    </script>
+    <script type="text/javascript" src="./Linux环境下GIT初次使用_files/i.js"></script>
+    
+    <span id="LayerLogin" style="display: none;"><span id="LayerLogin">
+    <link href="./Linux环境下GIT初次使用_files/registerfromarticle2.css" rel="stylesheet" type="text/css">
+    <div id="fullbg" style="width: 1263px; height: 6359px; display: block;"></div>
+    <div id="dialog" style="position: fixed; width: 690px; height: 363px; top: 331px; left: 631.5px; display: block;">
+        <div id="dialog_content"></div>  <div id="divtuijianpy" class="tuijianpy" style="width:690px;height:373px;background-color:#fff;">
+            <div>
+
+
+                
+
+                <div class="zc_big">
+
+                    <div style="padding-top: 17px; padding-right: 17px; float:right; "><img style="cursor:pointer;" id="cimages2" onmouseover="changeimagestatus(3);" onmouseout="    changeimagestatus(4);" onclick="    docclickbtn();" src="./Linux环境下GIT初次使用_files/cha1.gif"></div>
+
+
+                    <div style="padding-top: 51px; float: left; padding-left: 40px;">
+                        <img src="./Linux环境下GIT初次使用_files/zctit4.gif"><!--/wz/wzloginleft1.gif-->
+
+                        <div style=" padding-top:33px; padding-left:63px;"><a href="https://www.baidu.com/s?wd=Linux%E7%8E%AF%E5%A2%83%E4%B8%8BGIT%E5%88%9D%E6%AC%A1%E4%BD%BF%E7%94%A8&tn=SE_hldp01010_6r0gix1f" id="ywzfbtnbig" target="_blank" onclick="setTimeout(closeBg, 1000);wzhitnew2(103);"><img style="cursor:pointer;" src="./Linux环境下GIT初次使用_files/zctit3.gif"></a></div>
+
+                    </div>
+
+                    <div id="divsnsinfo" style="float: left;margin-left: 20px; height: 312px; padding-left: 53px; border-left: 1px solid #e3e3e3; ">
+                        <div style=" padding-left:8px;margin-top:20px;"><img src="./Linux环境下GIT初次使用_files/login2.gif"></div>
+                        <div style="padding-top: 14px;">
+                            <div id="divMsg"></div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <div id="needVerify" style="display: none; position: fixed; z-index: 111;"></div>
+</span>
+</span>
+    <div style="position: fixed; width: 100%; z-index: 2147483647; left: 0;">
+        <div class="mainnav" style="width: 100%; ">
+            <div class="mainnav1">
+                <div class="lf360" style="padding-left: 5px;">
+                    <a href="http://www.360doc.com/index.html">
+                        <img src="./Linux环境下GIT初次使用_files/logoo.gif"></a>
+                </div>
+                <div style="width: 625px; padding-top: 0px; padding-left: 4px; position: absolute;">
+                    <table height="34" border="0" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr id="daohangtr">
+                                <td style="width: 185px; _width: 0px; *width: 0px !important;"></td>
+                                <td class="navwz1" width="95">
+                                    <a href="http://www.360doc.com/index.html">首&nbsp;页</a>
+                                </td>
+                                <td width="100" class="  navwz1">
+                                    <a href="http://www.360doc.com/readroom.html">阅览室</a>
+                                </td>
+                                <td width="88" class="  navwz1">
+                                    <a href="http://www.360doc.com/weekstar.html">馆友</a>
+                                </td>
+                                <td width="132" class="  navwz1">
+                                    <a href="http://www.360doc.com/my360doc.aspx">我的图书馆</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="rt360" style="padding-top: 6px; width: 133px; padding-left: 38px;" id="outerdiv"><div class="denglbj lan2"><div style=" width:43px; float:left; text-align:center;" onmouseover="this.style.backgroundColor=&#39;#e5e5e5&#39;;this.parentNode.className=&#39;denglbj2 lan2&#39;" onmouseout="this.style.backgroundColor=&#39;#fcfcfc&#39;;this.parentNode.className=&#39;denglbj lan2&#39;"><a href="http://www.360doc.com/login.aspx?reurl=file:///C:/Documents%20and%20Settings/Administrator/My%20Documents/Downloads/Linux%E7%8E%AF%E5%A2%83%E4%B8%8BGIT%E5%88%9D%E6%AC%A1%E4%BD%BF%E7%94%A8.html">登录</a></div><div style=" width:1px; float:left; "></div><div style="width:46px; float:left;text-align:center; margin-left:1px;*margin-left:0px;" onmouseover="this.style.backgroundColor=&#39;#e5e5e5&#39;;this.parentNode.className=&#39;denglbj3 lan2&#39;" onmouseout="this.style.backgroundColor=&#39;#fcfcfc&#39;;this.parentNode.className=&#39;denglbj lan2&#39;" id="regdiv"><a href="http://www.360doc.com/register.aspx?refer=800" target="_blank">注册</a></div><div class="boxwid xinngdui" id="bfdiv"><a href="file:///C:/Documents%20and%20Settings/Administrator/My%20Documents/Downloads/Linux%E7%8E%AF%E5%A2%83%E4%B8%8BGIT%E5%88%9D%E6%AC%A1%E4%BD%BF%E7%94%A8.html#"><img id="imgbfabc" src="./Linux环境下GIT初次使用_files/5.gif"></a></div><div style=" position: absolute; margin-left:35px; *margin-left:-95px;_margin-left:-93px; width:96px;display:none;z-index:200;" id="func"><div class="tugduo3" id="divfunc" style="cursor:pointer;float:right; width:41px;"><div style=" height:26px; width:39px; border:1px solid #d4d4d4; border-bottom:none; background-color:#fff;"></div></div><div class="tipzhu3  right hui2" id="layerdiv"><ul><li><a href="http://www.360doc.com/advice.html" target="_blank">留言交流</a></li><li><a href="http://www.360doc.com/helpnew.html" target="_blank">网文摘手</a></li><li><a href="http://www.360doc.com/mobilapp.htm" target="_blank">手机客户端</a></li><li style=" border:none;"><a href="http://www.360doc.com/help.html" target="_blank">帮助</a></li></ul></div></div></div></div>
+                <div class=" rt360" style="padding-top: 6px; padding-right: 0px;">
+                    <div class="lf360 serch">
+                        <input name="input2" class="serchpt" id="txtSearchword" onkeydown="ongosearch()" onkeyup="showIntelliSense()" onfocus="if(this.value==&#39;搜文章 找馆友&#39;) this.value=&#39;&#39;;this.style.color=&#39;#272727&#39;" onblur="if(!this.value) {this.value=&#39;搜文章 找馆友&#39;;this.style.color=&#39;#b2b2b2&#39;;}" onpaste="showIntelliSense1()" type="text" value="搜文章 找馆友">
+                    </div>
+                    <div class="lf360 ssuo">
+                        <a id="searchlinkid" href="javascript:gosearch();"></a>
+                    </div>
+                    <div id="divsearch" style="margin-top: 25px; margin-left: 1px; display: none; position: absolute; z-index: 100; ">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navxt" style="width: 100%; ">
+        </div>
+    </div>
+    <div style="height: 44px; _height: 0px; width: 100%;"></div>
+    <div class="both"></div>
+
+    <div class="article_content" style="width: 1018px; ">
+
+        <div style="height: 90px; padding-top: 13px;">
+            <div id="ADAboveArtContent"><iframe marginwidth="0" marginheight="0" frameborder="0" scrolling="no" width="1012" height="90" src="./Linux环境下GIT初次使用_files/aboveConentAD2.htm"></iframe></div>
+        </div>
+        <p class="clearboth"></p>
+        <div class="a_left" style="width: 688px; ">
+            <div class="bdsharebuttonbox shareList doc360shareListWidth bdshare-button-style0-16" id="bdshare" data-bd-bind="1462367938125" style="top: 177px; display: block; ">
+                <a href="javascript:void(0);" class="share_weixin" onclick="shareWeixin();wzhitnew(30);" title="分享到微信"></a>
+                <a href="javascript:void(0);" class="share_qq" data-cmd="sqq" onclick="wzhitnew(6);" title="分享到QQ好友"></a>
+                <a href="javascript:void(0);" class="share_kongjian" data-cmd="qzone" onclick="wzhitnew(8);" title="分享到QQ空间"></a>
+                <a href="javascript:void(0);" class="share_weibo" data-cmd="tsina" onclick="wzhitnew(9);" title="分享到新浪微博"></a>
+            </div>
+            <div id="bgchange" style="width: 662px; ">
+                <div class="fontsize_bgcolor_controler">
+                    <div class="a_bgcolor">
+                        <img src="./Linux环境下GIT初次使用_files/bgcolor.jpg">
+                        <div class="a_colorlist">
+                            <span class="a_color1" onclick="wzhitnew(18);">
+                                <img src="./Linux环境下GIT初次使用_files/yes.gif"></span>
+                            <span class="a_color2" onclick="wzhitnew(19);">
+                                <img src="./Linux环境下GIT初次使用_files/yes.gif"></span>
+                            <span class="a_color3" onclick="wzhitnew(20);">
+                                <img src="./Linux环境下GIT初次使用_files/yes.gif"></span>
+                            <span class="a_color4" onclick="wzhitnew(21);">
+                                <img src="./Linux环境下GIT初次使用_files/yes.gif"></span>
+                            <span class="a_color5" onclick="wzhitnew(22);">
+                                <img src="./Linux环境下GIT初次使用_files/yes.gif"></span>
+                            <span class="a_color6 cur" onclick="wzhitnew(23);">
+                                <img src="./Linux环境下GIT初次使用_files/yes.gif"></span>
+                        </div>
+                    </div>
+                    <div class="a_fontsize">
+                        <img src="./Linux环境下GIT初次使用_files/fontSize.jpg">
+                        <div class="fschange">
+                            <label>
+                                <input type="radio" name="font_Size" id="" value="18" onclick="wzhitnew(15);">大
+                           
+                            </label>
+                            &nbsp;
+                           
+                            <label>
+                                <input type="radio" name="font_Size" id="" value="16" onclick="wzhitnew(16);">中
+                           
+                            </label>
+                            &nbsp;
+                           
+                            <label>
+                                <input type="radio" name="font_Size" id="" value="14" onclick="wzhitnew(17);">小
+                           
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <h2 id="titiletext">Linux环境下GIT初次使用</h2>
+                <div class="article_data">
+                    <div class="article_data_left">
+                        2015-04-13
+                        <span class="a_username">&nbsp;<a href="http://www.360doc.com/userhome/10648726" id="savernickname" target="_blank" onclick="wzhitnew(1);">小米钱</a>
+                        </span>
+                        <span id="articleinfo">
+                            <span id="docsource" class="a_from">&nbsp;摘自&nbsp;<a href="http://www.cnblogs.com/toughhou/p/3778821.html" target="_blank" onclick="wzhitnew(14);" title="">博客园</a></span><span id="360doc_Readnum">&nbsp;&nbsp;阅&nbsp;2229&nbsp;</span><span id="360docResaveCount"><span onclick="ShowSaverUser();wzhitnew(3);" id="360doc_saverNum" style="cursor: pointer;">&nbsp;转&nbsp;<span style="cursor:pointer;" onclick="javascript:ShowSaverUser();">10</span></span>
+                                <span id="360doc_saverUser"><div id="sameArtOuter" style="display: none; position: absolute; height: 305px; width: 144px; left: 0px; margin-top: 15px; z-index: 100000; "><div id="sameArt" style=" overflow-y: auto;  height:300px;overflow-x: hidden; z-index: 100;right:0px;margin-top:-10px;" onclick="event.cancelBubble=true;"></div></div></span>
+                            </span>
+                        </span>
+                    </div>
+                    <div id="resavelayer1" class="bdsharebuttonbox article_data_right bdshare-button-style0-16" data-bd-bind="1462367938125"><a href="javascript:void(0);" onclick="SaveArt();wzhitnew(24);" class="p2">转藏到我的图书馆</a><a href="javascript:void(0);" class="p1" onclick="shareWeixin();wzhitnew(65);">分享到微信 </a><div style="position: absolute;z-index:1000;margin-left: 86px; margin-top: 28px;" id="fuzhitishidiv"></div></div>
+                </div>
+                <div id="articlecontent" class="article_container" onmousedown="newhighlight = true;" onmouseup="NewHighlight(event);">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td id="artContent">
+                                    <p>Git是一个功能强大的分布式版本控制系统，最初用来作Linux内核代码管理的。</p>
+<p>第一次接触到github是关于一个报道：在2013年1月15日晚间，全球最大的社交编程及代码托管网站GitHub突然疑似遭遇DDOS攻击，访问大幅放缓，该网站管理员经过日志查询，发现是来自12306的抢票插件用户洪水般的访问导致GitHub出现问题。</p>
+<p> <br>
+	进入正题，github的第一次使用大概分以下步骤：<br>
+	（环境：readhat 5, 提前装好git。若没有安装，用“yum install git-core”命令安装，解决各种依赖问题，很方便。）
+</p>
+<p>
+	<strong>1. 申请github账户,并创建repository</strong>
+</p>
+<p>
+	<strong>2. 本地生成密钥对</strong>
+</p>
+<p>
+	<strong>3. 设置github上的公钥</strong>
+</p>
+<p>
+	<strong>4. 创建本地项目</strong>
+</p>
+<p>
+	&nbsp;
+</p>
+<ul>
+<li>
+		<span style="font-size: 16px;"><strong>申请github账户,并创建repository</strong></span>
+	</li>
+
+
+</ul>
+<p style="margin-left: 40px;">
+	在https://github.com上申请github账户,我的账户名是toughhou，并创建了名为etl的repository。
+</p>
+<p>
+	&nbsp;
+</p>
+<ul>
+<li>
+		<strong><span style="font-size: 16px;">本地生成密钥对</span></strong>
+	</li>
+
+
+</ul>
+<p style="margin-left: 40px;">
+	Git 服务器通常使用 SSH 公钥来进行授权。SSH 公钥默认储存在账户的主目录下的 ~/.ssh 目录。系统中的每个用户都必须提供一个公钥用于授权，没有的话就要生成一个。我没有，这里创建一个。步骤如下：
+</p>
+<blockquote>
+<p>
+		<span style="font-family: courier new,courier,monospace;">[root@ora11g ~]# mkdir .ssh<br>
+		[root@ora11g ~]# cd .ssh/</span>
+	</p>
+
+
+</blockquote>
+<p>
+	&nbsp;
+</p>
+<p>
+	<span style="color: #008000;">//用ssh-keygen命令来生成密钥对，passphrase我们输入或不输入都行。</span>
+</p>
+<blockquote>
+<p>
+		<span style="font-family: courier new,courier,monospace;">[root@ora11g .ssh]# <span style="color: #ff0000;">ssh-keygen -t rsa -C "toughhou@126.com"</span><br>
+		Generating public/private rsa key pair.<br>
+		Enter file in which to save the key (/root/.ssh/id_rsa):&nbsp;<br>
+		Enter passphrase (empty for no passphrase):&nbsp;<br>
+		Enter same passphrase again:&nbsp;<br>
+		Your identification has been saved in /root/.ssh/id_rsa.<br>
+		Your public key has been saved in /root/.ssh/id_rsa.pub.<br>
+		The key fingerprint is:<br>
+		03:73:b8:13:4c:cb:63:d0:c3:0b:5d:03:7d:0f:7e:18 toughhou@126.com</span>
+	</p>
+<p>
+		&nbsp;
+	</p>
+<p>
+		<span style="font-family: courier new,courier,monospace;">[root@ora11g .ssh]# ll<br>
+		total 8<br>
+		-rw------- 1 root root 1675 May &nbsp;5 23:25 id_rsa<br>
+		-rw-r--r-- 1 root root &nbsp;398 May &nbsp;5 23:25 id_rsa.pub</span>
+	</p>
+
+
+</blockquote>
+<p>
+	id_rsa.pub就是公钥文件，id_rsa就是密钥。
+</p>
+<p>
+	&nbsp;
+</p>
+<ul>
+<li>
+		<strong><span style="font-size: 16px;">设置github上的公钥</span></strong>
+	</li>
+
+
+</ul>
+<p style="margin-left: 40px;">
+	<strong>步骤如下：</strong><br>
+	&nbsp;&nbsp; &nbsp;a. 登陆github后 -&gt; "Account Setting" -&gt; "SSH Keys"<br>
+	&nbsp;&nbsp; &nbsp;b. "Add SSH Key"<br>
+	&nbsp;&nbsp; &nbsp;c. Title随便填写一个，Key那里我们把把id_rsa.pub里的内容拷贝进去。
+</p>
+<p>
+	<br>
+	<span style="color: #008000;">//好了之后用以下命令测试，若显示信息如下，则说明设置成功了。</span>
+</p>
+<blockquote>
+<p>
+		<span style="font-family: courier new,courier,monospace;">[root@ora11g etl]# ssh -T git@github.com<br>
+		Hi toughhou! You've successfully authenticated, but GitHub does not provide shell access.</span>
+	</p>
+
+
+</blockquote>
+<p>
+	&nbsp;
+</p>
+<ul>
+<li>
+		<span style="font-size: 16px;"><strong>创建本地项目</strong></span>
+	</li>
+
+
+</ul>
+<blockquote>
+<p>
+		<span style="font-family: courier new,courier,monospace;">[root@ora11g ~]# mkdir etl<br>
+		[root@ora11g ~]# cd etl/</span>
+	</p>
+
+
+</blockquote>
+<p>
+	&nbsp;
+</p>
+<p>
+	<span style="color: #008000;"><span style="font-family: courier new,courier,monospace;">//git初始化</span></span>
+</p>
+<blockquote>
+<p>
+		<span style="font-family: courier new,courier,monospace;">[root@ora11g etl]# git init<br>
+		Initialized empty Git repository in /root/etl/.git/</span>
+	</p>
+<p>
+		&nbsp;
+	</p>
+<p>
+		<span style="font-family: courier new,courier,monospace;">[root@ora11g etl]# touch readme.txt</span>
+	</p>
+<p>
+		<span style="font-family: courier new,courier,monospace;">[root@ora11g etl]# git add readme.txt</span>
+	</p>
+
+
+</blockquote>
+<p>
+	&nbsp;
+</p>
+<p>
+	<span style="color: #008000;">//使用git协议定义远程服务器别名origin</span>
+</p>
+<blockquote>
+<p>
+		<span style="font-family: courier new,courier,monospace;">[root@ora11g etl]# <span style="color: #ff0000;"><strong>git remote add origin git@github.com:toughhou/etl.git</strong></span></span>
+	</p>
+
+
+</blockquote>
+<p>
+	&nbsp;
+</p>
+<p>
+	<span style="color: #ff0000;"><strong>此处需要注意：</strong></span><br>
+	&nbsp;&nbsp; &nbsp;<span style="color: #ff0000;">git默认使用https协议，每次pull或push都要输入密码，比较麻烦。而且因为操作系统版本及一些库文件不全，设置起来很繁琐。<br>
+	&nbsp;&nbsp; &nbsp;我们这里使用git协议，然后使用ssh密钥。这样可以省去每次都输密码。</span>
+</p>
+<p>
+	<span style="color: #ff0000;">&nbsp;&nbsp; &nbsp;用https协议方式定义远程服务器别名：git remote add origin https://github.com/toughhou/etl.git</span>
+</p>
+<p>
+	<br>
+	<span style="color: #008000;">//查看你当前的remote url</span>
+</p>
+<blockquote>
+<p>
+		<span style="font-family: courier new,courier,monospace;">[root@ora11g etl]# git remote -v<br>
+		origin &nbsp;https://github.com/toughhou/etl.git (fetch)<br>
+		origin &nbsp;https://github.com/toughhou/etl.git (push)</span>
+	</p>
+
+
+</blockquote>
+<p>
+	&nbsp;
+</p>
+<p>
+	<span style="color: #008000;">//commit</span>
+</p>
+<blockquote>
+<p>
+		<span style="font-family: courier new,courier,monospace;">[root@ora11g etl]# git commit -m "First commit!!"<br>
+		git commit -m "First commitgit remote -v"<br>
+		[master (root-commit) 4bd96e9] First commitgit remote -v<br>
+		&nbsp;1 file changed, 0 insertions(+), 0 deletions(-)<br>
+		&nbsp;create mode 100644 readme.txt</span>
+	</p>
+
+
+</blockquote>
+<p>
+	&nbsp;
+</p>
+<p>
+	<span style="color: #008000;">//push</span>
+</p>
+<blockquote>
+<p>
+		<span style="font-family: courier new,courier,monospace;">[root@ora11g etl]# git push -u origin master<br>
+		Counting objects: 3, done.<br>
+		Writing objects: 100% (3/3), 215 bytes, done.<br>
+		Total 3 (delta 0), reused 0 (delta 0)<br>
+		To git@github.com:toughhou/etl.git<br>
+		&nbsp;* [new branch] &nbsp; &nbsp; &nbsp;master -&gt; master<br>
+		Branch master set up to track remote branch master from origin.</span>
+	</p>
+
+
+</blockquote>
+<p>
+	<br>
+	push完成之后，登陆github (https://github.com/toughhou/etl)查看，文件已经同步上去。
+</p>
+<p>
+	测试完成。
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	<span style="color: #008000;">//文中提到的如果用的是https协议的话，效果如下。push时需要输入密码。</span>
+</p>
+<blockquote>
+<p>
+		<span style="font-family: courier new,courier,monospace;">[root@ora11g etl]# <span style="color: #ff0000;"><strong>git remote add origin9 https://github.com/toughhou/etl.git</strong></span></span>
+	</p>
+<p>
+		<br>
+		<span style="font-family: courier new,courier,monospace;">[root@ora11g etl]# git push -u origin9 master<br>
+		<span style="color: #ff0000;">Username for 'https://github.com': toughhou<br>
+		Password for 'https://toughhou@github.com':&nbsp;</span><br>
+		Branch master set up to track remote branch master from origin9.<br>
+		Everything up-to-date</span>
+	</p>
+
+
+</blockquote>
+<p>
+	&nbsp;
+</p>
+<p>
+	用https协议的话，可能会碰到一些问题。这里把我碰到的问题及解决方式记录如下：<br>
+	&nbsp;
+</p>
+<blockquote>
+<p>
+		<span style="font-family: courier new,courier,monospace;">[root@ora11g etl]# git push -u origin master<br>
+		<span style="color: #ff0000;">error: SSL certificate problem, verify that the CA cert is OK. Details:</span><br>
+		error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed while accessing https://github.com/toughhou/etl.git/info/refs?service=git-receive-pack<br>
+		fatal: HTTP request failed</span>
+	</p>
+<p>
+		<span style="font-family: courier new,courier,monospace;">[root@ora11g etl]# <span style="color: #008000;">curl http://curl.haxx.se/ca/cacert.pem -o /etc/pki/tls/certs/ca-bundle.crt</span><br>
+		&nbsp; % Total &nbsp; &nbsp;% Received % Xferd &nbsp;Average Speed &nbsp; Time &nbsp; &nbsp;Time &nbsp; &nbsp; Time &nbsp;Current<br>
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dload &nbsp;Upload &nbsp; Total &nbsp; Spent &nbsp; &nbsp;Left &nbsp;Speed<br>
+		100 &nbsp;244k &nbsp;100 &nbsp;244k &nbsp; &nbsp;0 &nbsp; &nbsp; 0 &nbsp; 7785 &nbsp; &nbsp; &nbsp;0 &nbsp;0:00:32 &nbsp;0:00:32 --:--:-- &nbsp;2690</span>
+	</p>
+<p>
+		<br>
+		<span style="font-family: courier new,courier,monospace;">[root@ora11g etl]# git push -u origin master</span>
+	</p>
+<p>
+		<span style="font-family: courier new,courier,monospace;">(gnome-ssh-askpass:14850): Gtk-WARNING **: cannot open display: &nbsp;<br>
+		<span style="color: #ff0000;">error: unable to read askpass response from '/usr/libexec/openssh/gnome-ssh-askpass'</span><br>
+		Username for 'https://github.com': toughhou</span>
+	</p>
+<p>
+		<span style="font-family: courier new,courier,monospace;">(gnome-ssh-askpass:14856): Gtk-WARNING **: cannot open display: &nbsp;<br>
+		error: unable to read askpass response from '/usr/libexec/openssh/gnome-ssh-askpass'<br>
+		Password for 'https://toughhou@github.com':&nbsp;<br>
+		Branch master set up to track remote branch master from origin.<br>
+		Everything up-to-date</span>
+	</p>
+<p>
+		&nbsp;
+	</p>
+<p>
+		<span style="font-family: courier new,courier,monospace;">[root@ora11g etl]# <span style="color: #008000;">echo 'unset SSH_ASKPASS' &gt;&gt; ~/.bashrc &amp;&amp; source ~/.bashrc</span></span>
+	</p>
+<p>
+		<br>
+		<span style="font-family: courier new,courier,monospace;">[root@ora11g etl]# git push -u origin master &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>
+		Username for 'https://github.com': toughhou<br>
+		Password for 'https://toughhou@github.com':&nbsp;<br>
+		Branch master set up to track remote branch master from origin.<br>
+		Everything up-to-date</span>
+	</p>
+
+
+</blockquote>
+<p>
+	&nbsp;
+</p>
+<hr>
+<p>
+	&nbsp;
+</p>
+<p>&nbsp; &nbsp;&nbsp;</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div id="viewerPlaceHolder" style="width: 717px; height: 700px; display: none; margin: 0 auto;">
+                    </div>
+                </div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <ul></ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div></div>
+                <span></span>
+                <a></a>
+                <p style="margin: 0; padding: 0;"></p>
+                <p class="clearboth"></p>
+                <div class="bdsharebuttonbox bottombtn bdshare-button-style0-16" data-bd-bind="1462367938125">
+                    <a href="javascript:void(0);" class="btn_collect" onclick="SaveArt();wzhitnew(26);">转藏到我的图书馆</a>
+                    <a id="flowimg3" href="javascript:void(0);" class="btn_good" onclick="Showflowerlayer(&#39;sendedLayer1&#39;);wzhitnew(27);">献花（<span id="articleflowernum">1</span>）<span id="flowernumadd" style="display: none;">+1</span></a>
+                    <a href="javascript:void(0);" class="btn_sharewx" onclick="shareWeixin();wzhitnew(64);">分享到微信</a>
+                    <a href="https://www.baidu.com/s?wd=git+github+etl&tn=SE_hldp01010_6r0gix1f" target="_blank" class="btn_find" onclick="wzhitnew(100);">以文找文</a>
+                </div>
+                <div class="bottom_controler">
+                    <p class="bottom_cleft">
+                        来自：
+                         <span class="a_username" style="width: auto;" onclick="wzhitnew(59)">
+                             <a href="http://www.360doc.com/userhome/10648726" id="savernickname2" target="_blank">小米钱</a>
+                         </span>
+                        &gt; 
+                        <span id="cname" class="a_from" onclick="wzhitnew(60)"><a href="http://www.360doc.com/userhome.aspx?userid=10648726&cid=5" target="_blank">《java》</a></span>
+                    </p>
+                    <div class="bottom_cright">
+                        <a href="javascript:void(0);" class="a1" onclick="showdivemail1();wzhitnew(12);">推荐给朋友</a>
+                        <a href="javascript:void(0);" class="a2" onclick="showAlertLayer1();wzhitnew(13);">举报</a>
+                    </div>
+                </div>
+                <div class="prev_next">
+                    <p id="lastart" class="p1" style="display: block; "> 上一篇：<a onclick="wzhitnew(57);" href="http://www.360doc.com/content/15/0412/11/10648726_462605109.shtml" target="_blank">Java JDBC编程总结</a></p>
+                    <p id="nextart" class="p2" style="display: block; "> 下一篇：<a onclick="wzhitnew(58);" href="http://www.360doc.com/content/15/0429/15/10648726_466824022.shtml" target="_blank">Busy Developers' Guide to HSSF and XSSF Features</a></p>
+                </div>
+            </div>
+            <p class="clearboth"></p>
+            <div style="width: 676px; float: left;">
+                <div class="str_border" style="border: none;position:relative;z-index:2;">
+                    <strong>猜你喜欢</strong>
+                </div>
+                <ul class="youlike" style="margin-top:-18px;position:relative;z-index:1;">
+                    <iframe id="youlikead" style="width: 676px; height: 280px; border: 0;" frameborder="0" scrolling="no" src="./Linux环境下GIT初次使用_files/adbaiduyoulike.htm"></iframe>
+                </ul>
+                <div class="zcommond" style="padding: 10px 0 20px;">
+                    <div class="bottom_article f_left">
+                        <div class="str_border">
+                            <strong>类似文章</strong>
+                            <a href="http://www.360doc.com/relevant/462911761_more.shtml" target="_blank" class="a_more f_right" onclick="wzhitnew(38)">更多</a>
+                        </div>
+                        <ul class="barticle_list">
+                            
+                                    <li><span><a href="http://www.360doc.com/content/14/0120/17/11537979_346694436.shtml" target="_blank" onclick="wzhitnew(37)">Github的使用和创建，最近一个项目要用，....</a></span></li>
+                                
+                                    <li><span><a href="http://www.360doc.com/content/13/0814/10/9171956_307028720.shtml" target="_blank" onclick="wzhitnew(37)">git fetch 的简单用法:更新远程代码到本...</a></span></li>
+                                
+                                    <li><span><a href="http://www.360doc.com/content/13/0912/13/11813302_313944247.shtml" target="_blank" onclick="wzhitnew(37)">Git 常用命令详解（二）</a></span></li>
+                                
+                                    <li><span><a href="http://www.360doc.com/content/10/0621/16/11192_34417725.shtml" target="_blank" onclick="wzhitnew(37)">{|ihower.tw| blog } | Git 版本控制系統....</a></span></li>
+                                
+                                    <li><span><a href="http://www.360doc.com/content/13/1022/16/947551_323299732.shtml" target="_blank" onclick="wzhitnew(37)">Git教程 ? Axb的自我修养</a></span></li>
+                                
+                                    <li><span><a href="http://www.360doc.com/content/13/1223/11/15184908_339447248.shtml" target="_blank" onclick="wzhitnew(37)">Git使用基础篇</a></span></li>
+                                
+                                    <li><span><a href="http://www.360doc.com/content/13/0622/16/203871_294766073.shtml" target="_blank" onclick="wzhitnew(37)">64位windows 7下成功配置TortoiseGit使用....</a></span></li>
+                                
+                                    <li><span><a href="http://www.360doc.com/content/12/0831/12/10588621_233370510.shtml" target="_blank" onclick="wzhitnew(37)">Learn.GitHub -5</a></span></li>
+                                
+                        </ul>
+                    </div>
+                    <div class="bottom_article f_right">
+                        <div class="str_border">
+                            <strong>精选文章</strong>
+                        </div>
+                        <ul class="barticle_list">
+                            
+                                    <li><span><a onclick="wzhitnew(40);" href="http://www.360doc.com/content/14/0108/16/1989322_343621365.shtml" target="_blank">面相看职场</a></span></li>
+                                
+                                    <li><span><a onclick="wzhitnew(40);" href="http://www.360doc.com/content/13/1221/13/10663922_338891681.shtml" target="_blank">回答的真是帅呆了</a></span></li>
+                                
+                                    <li><span><a onclick="wzhitnew(40);" href="http://www.360doc.com/content/14/0328/10/9121025_364358341.shtml" target="_blank">古代诗人称号大全</a></span></li>
+                                
+                                    <li><span><a onclick="wzhitnew(40);" href="http://www.360doc.com/content/13/1206/13/12980113_334947580.shtml" target="_blank">生活中最实用的技巧</a></span></li>
+                                
+                                    <li><span><a onclick="wzhitnew(40);" href="http://www.360doc.com/content/14/0503/03/17116577_374097314.shtml" target="_blank">人生哲理,这才是高人</a></span></li>
+                                
+                                    <li><span><a onclick="wzhitnew(40);" href="http://www.360doc.com/content/14/0329/00/156610_364579032.shtml" target="_blank">六十甲子</a></span></li>
+                                
+                                    <li><span><a onclick="wzhitnew(40);" href="http://www.360doc.com/content/13/1218/09/9427464_338063292.shtml" target="_blank">人类即将面临的十大变化</a></span></li>
+                                
+                                    <li><span><a onclick="wzhitnew(40);" href="http://www.360doc.com/content/13/1005/10/3966739_319111202.shtml" target="_blank">帮你放慢衰老的脚步</a></span></li>
+                                
+                        </ul>
+                    </div>
+                </div>
+                
+                <iframe id="underZcommondAd" style="width: 676px; height: 202px;" frameborder="0" scrolling="no" src="./Linux环境下GIT初次使用_files/underzcommond.htm"></iframe>
+                <div class="zcommond" style="margin-top:10px;">
+                    
+                    <div class="f_left" style="width: 300px; height: 90px;">
+                        <iframe id="aboveReflectionAd1" frameborder="0" scrolling="no" src="./Linux环境下GIT初次使用_files/aboveReflectionAd1.htm"></iframe>
+                    </div>
+                    
+                    <div class="f_left" style="width: 300px; height: 90px; margin-left: 44px;">
+                        <iframe id="aboveReflectionAd2" frameborder="0" scrolling="no" src="./Linux环境下GIT初次使用_files/aboveReflectionAd2.htm"></iframe>
+                    </div>
+                </div>
+
+                <p></p>
+                <div id="ReflectionPart"><div style="margin: 0px 0px;"><div class="plbox" style="height:auto;"><div class="plmain"><div style="height: 23px;" class="titwx">发表评论：</div><div class="deluwx">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请&nbsp;<span><a onclick="ReflectionLoginform();wzhitnew(45);" href="javascript:void(0);">登录</a></span>&nbsp;或者&nbsp;<span><a onclick="InsertLogData(4);wzhitnew(46);" href="http://www.360doc.com/register.aspx?refer=53&reurl=showweb/0/0/54400091122.aspx" target="_blank">注册</a></span>&nbsp;后再进行评论</div><div class="rt360" style="height: 26px;margin:-22px 170px 0 0;_display:inline;"><span class="dsfwz">社交帐号登录：</span><a class="dsftb sf1" href="javascript:void(0);" onclick="ArtLoginTypeID=13;toSNSLogin(&#39;smb&#39;);wzhitnew(47);_hmt.push([&#39;_trackEvent&#39;,&#39;loginsina&#39;,&#39;clicknum&#39;,&#39;wenzhangyeremark&#39;]);" title="新浪微博"></a><a class="dsftb sf2 " onclick="ArtLoginTypeID=13;toSNSLogin(&#39;qq&#39;);wzhitnew(48);_hmt.push([&#39;_trackEvent&#39;,&#39;loginqq&#39;,&#39;clicknum&#39;,&#39;wenzhangyeremark&#39;]); " href="javascript:void(0);" title="腾讯QQ"></a><a class="dsftb sf3" href="javascript:void(0);" onclick="ArtLoginTypeID=13;toSNSLogin(&#39;wx&#39;);wzhitnew(49);_hmt.push([&#39;_trackEvent&#39;,&#39;loginrenren&#39;,&#39;clicknum&#39;,&#39;wenzhangyeremark&#39;]);" title="微信"></a></div></div></div></div></div>
+                <div style="padding-top: 15px; padding-left: 15px;" id="Reflction"><div id="360docRefTN" class="wenzhang_bt" style="display:none;"></div><div id="360docRefCT"></div><div id="360docRefPB" style="display: none;"></div></div>
+            </div>
+        </div>
+        <div class="a_right">
+            <div class="user_info">
+                <div class="user_photo f_left">
+                    <p class="user_photopic">
+                        <a href="http://www.360doc.com/userhome/10648726" id="userphotourl" target="_blank" onclick="wzhitnew(28);">
+                            <img src="./Linux环境下GIT初次使用_files/100" id="userphoto" width="58" height="58">
+                        </a>
+                    </p>
+                    <a href="javascript:void(0);" onclick="docTalk();wzhitnew(106);" class="user_talk" title="与TA对话"></a>
+                </div>
+                <div class="user_data f_right">
+                    <div class="user_data_name">
+                        <a href="http://www.360doc.com/userhome/10648726" id="nickname" target="_blank" onclick="wzhitnew(29);">小米钱</a>
+                        <img src="./Linux环境下GIT初次使用_files/user_name_tag.gif" alt="图书馆">
+                    </div>
+                    <p id="userdegree"><img src="./Linux环境下GIT初次使用_files/userstar1.gif"><img src="./Linux环境下GIT初次使用_files/userstar3.gif"><img src="./Linux环境下GIT初次使用_files/userstar3.gif"><img src="./Linux环境下GIT初次使用_files/userstar3.gif"><img src="./Linux环境下GIT初次使用_files/userstar3.gif"></p>
+                    <div class="user_data_num">
+                        <a id="spanfollowstatus" class="gz_no"></a>
+                        <script type="text/javascript">isfollow(10648726);</script>
+                        <span id="follownum">1</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span>馆藏</span>&nbsp;<span id="artnum">98</span>
+                    </div>
+                </div>
+            </div>
+            <div class="his_her"><ul class="his_her_type"><li class="f_left curone">TA的最新馆藏</li></ul><div class="his_her_div" style="height:190px;"><ul class="his_her_list"><li><div><span></span><a href="http://www.360doc.com/content/15/0907/16/10648726_497502751.shtml" target="_blank" onclick="wzhitnew(51)">(1)Spring&nbsp;<context:annotation< a=""></context:annotation<></a></div><div><a href="http://www.360doc.com/content/15/0907/16/10648726_497502751.shtml" target="_blank" onclick="wzhitnew(51)"><span></span></a><a href="http://www.360doc.com/content/15/0831/19/10648726_496085106.shtml" target="_blank" onclick="wzhitnew(51)">Spring JdbcTemplate Example | Examples Java Code Geeks</a></div><div><span></span><a href="http://www.360doc.com/content/15/0821/09/10648726_493778062.shtml" target="_blank" onclick="wzhitnew(51)">吴声：人是这个时代最大的场景</a></div><div><span></span><a href="http://www.360doc.com/content/15/0626/14/10648726_480812598.shtml" target="_blank" onclick="wzhitnew(51)">爆老师教你写万能通用搜索营销策略</a></div><div><span></span><a href="http://www.360doc.com/content/15/0626/10/10648726_480772766.shtml" target="_blank" onclick="wzhitnew(51)">java中 set,list,array(集合与数组)相互转换</a></div><div><span></span><a href="http://www.360doc.com/content/15/0611/15/10648726_477394291.shtml" target="_blank" onclick="wzhitnew(51)">专栏：gradle</a></div></li></ul></div></div>
+
+
+
+
+
+<div class="both" style="padding-top: 10px; height: 260px;">
+    <iframe id="ifartad1" height="250px" width="300px" frameborder="0" scrolling="no" src="./Linux环境下GIT初次使用_files/ad2_300.htm"></iframe>
+    <div style="height: 10px;">
+    </div>
+</div>
+
+<div class="his_her" id="recommendArt" style="margin-top: 5px;">
+    <div class="str_border" style="margin: 0;">
+        <span style="font-size: 14px; float: left;">推荐阅读</span>
+        <a style="float: right;" class="a_more" onclick="wzhitnew(32)" href="http://www.360doc.com/readroom.html" target="_blank">更多</a>
+    </div>
+    <div class="his_her_div" style="height: 264px;">
+        <ul class="his_her_list">
+            <li id="recommendArtLists"><div><span></span><a href="http://www.360doc.com/content/15/0626/10/10648726_480772766.shtml" target="_blank" onclick="wzhitnew(31)">java中 set,list,array(集合与数组)相互转换</a></div><div><span></span><a href="http://www.360doc.com/content/15/0626/02/10648726_480812598.shtml" target="_blank" onclick="wzhitnew(31)">爆老师教你写万能通用搜索营销策略</a></div><div><span></span><a href="http://www.360doc.com/content/15/0528/03/10648726_473880067.shtml" target="_blank" onclick="wzhitnew(31)">Spring Data JPA,基础学习笔记.</a></div><div><span></span><a href="http://www.360doc.com/content/15/0528/05/10648726_474016978.shtml" target="_blank" onclick="wzhitnew(31)">commons</a></div><div><span></span><a href="http://www.360doc.com/content/15/0513/06/10648726_470235723.shtml" target="_blank" onclick="wzhitnew(31)">SSH远程会话管理工具</a></div><div><span></span><a href="http://www.360doc.com/content/15/0513/06/10648726_470238921.shtml" target="_blank" onclick="wzhitnew(31)">Apache的DBUtils</a></div><div><span></span><a href="http://www.360doc.com/content/15/0515/11/10648726_470635990.shtml" target="_blank" onclick="wzhitnew(31)">Linux上安装7zip使用教程及zip中文文件名解压乱码解决方法。</a></div><div><span></span><a href="http://www.360doc.com/content/15/0504/04/10648726_468003175.shtml" target="_blank" onclick="wzhitnew(31)">2014 年度 Git@OSC 最热门的 50 个项目</a></div><div><span></span><a href="http://www.360doc.com/content/15/0505/08/10648726_468142029.shtml" target="_blank" onclick="wzhitnew(31)">JAVA字符串格式化</a></div></li>
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="both" style="padding-top: 10px;">
+    <iframe id="ifartad2" height="250" width="300px" frameborder="0" scrolling="no" src="./Linux环境下GIT初次使用_files/ad3_300.htm"></iframe>
+</div>
+<br>
+
+
+<iframe id="ifartrightsogou" height="190" width="300px" frameborder="0" scrolling="no" src="./Linux环境下GIT初次使用_files/artrightadsogou300.htm"></iframe>
+
+
+
+            <div class="both" id="divad5" style="padding-top: 11px; zoom: 1; width: 300px; top: 55px; left: 840.5px; position: fixed; ">
+                <div id="divad4" style="width: 250px; margin: 0px auto; ">
+                    <div>
+                        
+                        <iframe id="ifartad" height="250px" width="300px" frameborder="0" scrolling="no" src="./Linux环境下GIT初次使用_files/ad4_300.htm"></iframe>
+                    </div>
+                    <div class="ggwz">
+                        <a href="javascript:void(0);" onclick="closead(2);">关闭</a>
+                    </div>
+                    <div style="height: 13px;">
+                    </div>
+                </div>
+                <div style="clear: both; " id="divad6">
+                                <div id="adfloatbaidu">
+                                    <iframe id="ifartadfloadbaidu" height="250px" width="250px" frameborder="0" scrolling="no" src="./Linux环境下GIT初次使用_files/ad5.htm" style="width: 250px; margin: 0px auto; "></iframe>
+                                </div>
+                                <div class="ggwz" style="left:25px;">
+                                    <a href="javascript:void(0);" onclick="closead(3);">关闭</a>
+                                </div>
+                                <div style="height: 13px;">
+                                </div>
+                            </div>
+                <div style="height: 75px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="clearboth"></p>
+    <input type="hidden" id="docarttitle" value="Linux%e7%8e%af%e5%a2%83%e4%b8%8bGIT%e5%88%9d%e6%ac%a1%e4%bd%bf%e7%94%a8">
+    <input type="hidden" id="firstartid" value="462911761">
+    <input type="hidden" id="artreadroomid" value="0">
+    <script src="./Linux环境下GIT初次使用_files/StickySystem20160414.js" type="text/javascript" charset="utf-8"></script>
+    <script>GerLookingUserInfo(1,10648726,1,0,'-1',-1,10,0);OutputSource('http%3a%2f%2fwww.cnblogs.com%2ftoughhou%2fp%2f3778821.html','博客园');OutputCategory(10648726,5,'%e3%80%8ajava%e3%80%8b');OutputLastNextArt('Java+JDBC%e7%bc%96%e7%a8%8b%e6%80%bb%e7%bb%93','http://www.360doc.com/content/15/0412/11/10648726_462605109.shtml',0);OutputLastNextArt('Busy+Developers%27+Guide+to+HSSF+and+XSSF+Features','http://www.360doc.com/content/15/0429/15/10648726_466824022.shtml',1);</script>
+
+
+<div style="display: none;"><iframe width="1" height="1" src="javascript:document.write('');" id="UploadContentIframe" name="UploadContentIframe"></iframe></div><div style="display: none;"><form id="UploadContentForm" name="UploadContentForm" action="file:///C:/Documents%20and%20Settings/Administrator/My%20Documents/Downloads/Linux%E7%8E%AF%E5%A2%83%E4%B8%8BGIT%E5%88%9D%E6%AC%A1%E4%BD%BF%E7%94%A8_files/log_print.html" target="UploadContentIframe" enctype="application/x-www-form-urlencoded" method="POST"><input type="text" name="url" value="http://www.360doc.com/content/15/0413/15/10648726_462911761.shtml"><textarea name="title">Linux环境下GIT初次使用</textarea><textarea name="mypos"></textarea><textarea name="metakeywords">git,github,etl</textarea><textarea name="metadescription">Linux环境下GIT初次使用</textarea><input type="text" name="lastmodified" value="05/04/2016 11:40:00"><input type="text" name="charset" value="UTF-8"><textarea name="maincontent">Git是一个功能强大的分布式版本控制系统，最初用来作Linux内核代码管理的。第一次接触到github是关于一个报道：在2013年1月15日晚间，全球最大的社交编程及代码托管网站GitHub突然疑似遭遇DDOS攻击，访问大幅放缓，该网站管理员经过日志查询，发现是来自12306的抢票插件用户洪水般的访问导致GitHub出现问题。	进入正题，github的第一次使用大概分以下步骤：	（环境：readhat 5, 提前装好git。若没有安装，用“yum install git-core”命令安装，解决各种依赖问题，很方便。）1. 申请github账户,并创建repository2. 本地生成密钥对3. 设置github上的公钥4. 创建本地项目	在https://github.com上申请github账户,我的账户名是toughhou，并创建了名为etl的repository。	Git 服务器通常使用 SSH 公钥来进行授权。SSH 公钥默认储存在账户的主目录下的 ~/.ssh 目录。系统中的每个用户都必须提供一个公钥用于授权，没有的话就要生成一个。我没有，这里创建一个。步骤如下：[root@ora11g ~]# mkdir .ssh		[root@ora11g ~]# cd .ssh///用ssh-keygen命令来生成密钥对，passphrase我们输入或不输入都行。[root@ora11g .ssh]# ssh-keygen -t rsa -C "toughhou@126.com"		Generating public/private rsa key pair.		Enter file in which to save the key (/root/.ssh/id_rsa):&nbsp;		Enter passphrase (empty for no passphrase):&nbsp;		Enter same passphrase again:&nbsp;		Your identification has been saved in /root/.ssh/id_rsa.		Your public key has been saved in /root/.ssh/id_rsa.pub.		The key fingerprint is:		03:73:b8:13:4c:cb:63:d0:c3:0b:5d:03:7d:0f:7e:18 toughhou@126.com[root@ora11g .ssh]# ll		total 8		-rw------- 1 root root 1675 May &nbsp;5 23:25 id_rsa		-rw-r--r-- 1 root root &nbsp;398 May &nbsp;5 23:25 id_rsa.pub	id_rsa.pub就是公钥文件，id_rsa就是密钥。步骤如下：	&nbsp;&nbsp; &nbsp;a. 登陆github后 -&gt; "Account Setting" -&gt; "SSH Keys"	&nbsp;&nbsp; &nbsp;b. "Add SSH Key"	&nbsp;&nbsp; &nbsp;c. Title随便填写一个，Key那里我们把把id_rsa.pub里的内容拷贝进去。//好了之后用以下命令测试，若显示信息如下，则说明设置成功了。[root@ora11g etl]# ssh -T git@github.com		Hi toughhou! You've successfully authenticated, but GitHub does not provide shell access.[root@ora11g ~]# mkdir etl		[root@ora11g ~]# cd etl///git初始化[root@ora11g etl]# git init		Initialized empty Git repository in /root/etl/.git/[root@ora11g etl]# touch readme.txt[root@ora11g etl]# git add readme.txt//使用git协议定义远程服务器别名origin[root@ora11g etl]# git remote add origin git@github.com:toughhou/etl.git此处需要注意：git默认使用https协议，每次pull或push都要输入密码，比较麻烦。而且因为操作系统版本及一些库文件不全，设置起来很繁琐。	&nbsp;&nbsp; &nbsp;我们这里使用git协议，然后使用ssh密钥。这样可以省去每次都输密码。&nbsp;&nbsp; &nbsp;用https协议方式定义远程服务器别名：git remote add origin https://github.com/toughhou/etl.git//查看你当前的remote url[root@ora11g etl]# git remote -v		origin &nbsp;https://github.com/toughhou/etl.git (fetch)		origin &nbsp;https://github.com/toughhou/etl.git (push)//commit[root@ora11g etl]# git commit -m "First commit!!"		git commit -m "First commitgit remote -v"		[master (root-commit) 4bd96e9] First commitgit remote -v		&nbsp;1 file changed, 0 insertions(+), 0 deletions(-)		&nbsp;create mode 100644 readme.txt//push[root@ora11g etl]# git push -u origin master		Counting objects: 3, done.		Writing objects: 100% (3/3), 215 bytes, done.		Total 3 (delta 0), reused 0 (delta 0)		To git@github.com:toughhou/etl.git		&nbsp;* [new branch] &nbsp; &nbsp; &nbsp;master -&gt; master		Branch master set up to track remote branch master from origin.	push完成之后，登陆github (https://github.com/toughhou/etl)查看，文件已经同步上去。	测试完成。//文中提到的如果用的是https协议的话，效果如下。push时需要输入密码。[root@ora11g etl]# git remote add origin9 https://github.com/toughhou/etl.git[root@ora11g etl]# git push -u origin9 masterUsername for 'https://github.com': toughhou		Password for 'https://toughhou@github.com':&nbsp;		Branch master set up to track remote branch master from origin9.		Everything up-to-date	用https协议的话，可能会碰到一些问题。这里把我碰到的问题及解决方式记录如下：[root@ora11g etl]# git push -u origin mastererror: SSL certificate problem, verify that the CA cert is OK. Details:		error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed while accessing https://github.com/toughhou/etl.git/info/refs?service=git-receive-pack		fatal: HTTP request failed[root@ora11g etl]# curl http://curl.haxx.se/ca/cacert.pem -o /etc/pki/tls/certs/ca-bundle.crt		&nbsp; % Total &nbsp; &nbsp;% Received % Xferd &nbsp;Average Speed &nbsp; Time &nbsp; &nbsp;Time &nbsp; &nbsp; Time &nbsp;Current		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dload &nbsp;Upload &nbsp; Total &nbsp; Spent &nbsp; &nbsp;Left &nbsp;Speed		100 &nbsp;244k &nbsp;100 &nbsp;244k &nbsp; &nbsp;0 &nbsp; &nbsp; 0 &nbsp; 7785 &nbsp; &nbsp; &nbsp;0 &nbsp;0:00:32 &nbsp;0:00:32 --:--:-- &nbsp;2690[root@ora11g etl]# git push -u origin master(gnome-ssh-askpass:14850): Gtk-WARNING **: cannot open display: &nbsp;error: unable to read askpass response from '/usr/libexec/openssh/gnome-ssh-askpass'		Username for 'https://github.com': toughhou(gnome-ssh-askpass:14856): Gtk-WARNING **: cannot open display: &nbsp;		error: unable to read askpass response from '/usr/libexec/openssh/gnome-ssh-askpass'		Password for 'https://toughhou@github.com':&nbsp;		Branch master set up to track remote branch master from origin.		Everything up-to-date[root@ora11g etl]# echo 'unset SSH_ASKPASS' &gt;&gt; ~/.bashrc &amp;&amp; source ~/.bashrc[root@ora11g etl]# git push -u origin master &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;		Username for 'https://github.com': toughhou		Password for 'https://toughhou@github.com':&nbsp;		Branch master set up to track remote branch master from origin.		Everything up-to-date</textarea></form></div><div id="goTop2" style="left: 1160.5px; "><div id="goTop"><a href="http://www.360doc.com/content/15/0413/15/10648726_462911761.shtml#" id="go_top"></a></div><div id="goTop1"><a href="javascript:void(0);" id="go_top1"></a></div><div></div></div></body></html>
