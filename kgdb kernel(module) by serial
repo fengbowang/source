@@ -1,0 +1,41 @@
+
+
+
+target:
+
+stty ispeed 115200 ospeed 115200 -F /dev/ttyS1
+
+#echo ttyS1 > /sys/module/kgdboc/parameters/kgdboc
+
+
+ echo ttyS1 > /sys/module/kgdboc/parameters/kgdboc
+
+echo g > /proc/sysrq-trigger
+
+
+echo g > /proc/sysrq-trigger
+
+
+host 
+insmod a.ko
+
+cat /sys/module/a/sections/.text
+
+
+
+0xfa131000
+
+
+
+
+add-symbol-fileq.ko 0xf8ee7000
+
+
+add-symbol-file  /a.ko 0xf8ee7000
+
+
+
+sshfs 192.168.8.133:/root/linux-3 /root/linux-3
+
+
+fusermount -u /root/linux-3.14.28
