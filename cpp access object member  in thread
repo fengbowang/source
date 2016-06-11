@@ -1,0 +1,97 @@
+#include <cstdio>
+#include <iostream>
+#include <thread>
+#include <chrono>
+
+class A {
+public:
+    A();
+   A(int  active1);
+
+    void startThread();
+    void endThread();
+private:
+    void threadCall();
+    int  active;
+};
+
+int main() {
+    A threadThing, t2(26);
+    threadThing.startThread();
+   t2.startThread();
+    printf("[M] Thread Created\n");
+    std::this_thread::sleep_for(std::chrono::seconds(25));
+    threadThing.endThread();
+    printf("[M] t1 Thread Killed\n");
+    std::this_thread::sleep_for(std::chrono::seconds(5));
+
+    return 0;
+}
+
+A::A() {
+    active = 15;
+}
+
+A::  A(int active1){
+    active = active1;
+}
+
+void A::startThread() {
+    //active = 1;
+    std::thread AThread(&A::threadCall, this);
+    AThread.detach();
+}
+
+void A::endThread() {
+    active = false;
+}
+
+void A::threadCall() {
+    printf("[T] Thread Started\n");
+    while (active) {
+        std::this_thread::sleep_for(std::chrono::seconds(2));
+		std::cout << "active = " << active << std::endl;
+    }
+    printf("[T] Thread Ended\n");
+}
+
+
+
+
+
+root@wfb:/home/wfb# g++ t1.cpp -std=c++0x -lpthread -o t1
+root@wfb:/home/wfb# g++ t1.cpp -std=c++0x -lpthread -o t1
+root@wfb:/home/wfb# ./t1
+[M] Thread Created
+[T] Thread Started
+[T] Thread Started
+active = active = 1526
+
+active = 15
+active = 26
+active = 15
+active = 26
+active = 15
+active = 26
+active = 15
+active = 26
+active = 15
+active = 26
+active = 15
+active = 26
+active = 15
+active = 26
+active = 15
+active = 26
+active = 15
+active = 26
+active = 15
+active = 26
+active = 15
+active = 26
+[M] t1 Thread Killed
+active = 0
+[T] Thread Ended
+active = 26
+active = 26
+root@wfb:/home/wfb# 
