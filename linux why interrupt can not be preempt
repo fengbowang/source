@@ -5,5 +5,5 @@ and time, and cache is prone to missing (多串行，少并发,简单，性能�
    2.2 if switching is performed in the middle of processing of a interupt, it is difficult to synchronize.so switching can only exist between 2 interrputs
 3 for  interrupt processing in kernel thread, thers is a problem, how scheduling guarantee kernel thread's priority?
 4 to userspace time delay, there is a hyposis for OS: OS is a thin hierarchy in the whole system regarding cpu cost and time delay.
-So if kernel consume much CPU and time,then maybe the system is in heavy load., So maybe we can schedule a real time thread for running ,
-or increase the system's hw capability
+So if kernel consume much CPU and time,then maybe the system is in heavy load, so maybe we can schedule a real time thread to run
+immediately when it is wakeup by interrupts,or increase the system's hw capability.
