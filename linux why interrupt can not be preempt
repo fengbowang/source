@@ -1,6 +1,6 @@
 1 for performance(throughput and time delay), if more shcedule and switch  between kernel and process, the shcedule and switch comsumes cpu 
-and time, and cache is prone to missing (多串行，少并发)
-2 for consistency (多串行，少并发)
+and time, and cache is prone to missing (多串行，少并发,简单，性能好)
+2 for consistency (多串行，少并发,简单，性能好)
    2.1 if a interrupt processing flow is under process A context, then cpu is switched to process B, and another interrupt occurs and is processed under B, how the consistency?
    2.2 if switching is performed in the middle of processing of a interupt, it is difficult to synchronize.so switching can only exist between 2 interrputs
 3 for  interrupt processing in kernel thread, thers is a problem, how scheduling guarantee kernel thread's priority?
