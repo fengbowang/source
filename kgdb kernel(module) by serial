@@ -9,6 +9,12 @@ stty ispeed 115200 ospeed 115200 -F /dev/ttyS1
 
 
  echo ttyS1 > /sys/module/kgdboc/parameters/kgdboc
+ 
+ 
+insmod a.ko
+
+cat /sys/module/a/sections/.text
+
 
 echo g > /proc/sysrq-trigger
 
@@ -17,9 +23,10 @@ echo g > /proc/sysrq-trigger
 
 
 host 
-insmod a.ko
 
-cat /sys/module/a/sections/.text
+gdb vmlinux
+
+target remote /dev/ttyS1
 
 
 
