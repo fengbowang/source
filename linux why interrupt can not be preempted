@@ -1,4 +1,4 @@
-1 for performance(throughput and time delay), if more shcedule and switch  between kernel and process, the shcedule and switch comsumes cpu 
+1 for performance(throughput and time delay), if more shcedule and switch  between kernel and process, the schedule and switch comsumes cpu 
 and time, and cache is prone to missing (多串行，少并发,简单，性能好)
 2 for consistency (多串行，少并发,简单，性能好)
    2.1 if a interrupt processing flow is under process A context, then cpu is switched to process B, and another interrupt occurs and is processed under B, how the consistency?
