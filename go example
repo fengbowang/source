@@ -1,0 +1,85 @@
+package main
+import (
+    "fmt"
+    "io/ioutil"
+    "strings"
+)
+
+import (
+	"bufio"
+	"io"
+	"net"
+)
+
+/*
+func main() {
+   Ioutil("1.txt")
+    }
+*/
+func Ioutil(name string) {
+    if contents,err := ioutil.ReadFile(name);err == nil {
+        result := strings.Replace(string(contents),"\n","",1)
+        fmt.Println(result)
+        }
+    }
+
+
+    
+
+
+
+func main() {
+     /*tcp 8080*/
+     
+	list, err := net.Listen("tcp", "127.0.0.1:8081")
+
+	if err != nil {
+		fmt.Println("listen failed!")
+		fmt.Println(err)
+	}
+	
+	defer list.Close()
+
+	for {
+		
+		c, err := list.Accept()
+		if err != nil {
+			fmt.Println("wrong conn")
+		}
+		
+		go Handle(c)
+	}
+}
+
+func Handle(conn net.Conn) {
+
+    var contents []byte 
+	defer conn.Close()
+	
+	data, err := bufio.NewReader(conn).ReadString('\n')
+	
+	if err != nil && err != io.EOF {
+		fmt.Println(err.Error())
+	}
+	fmt.Println(data)
+
+	if contents,err := ioutil.ReadFile(data);err == nil {
+        result := strings.Replace(string(contents),"\n","",1)
+        fmt.Println(result)
+        }
+        
+
+	//num, write_err := conn.Write([]byte("hello"))
+	//result
+
+	num, write_err := conn.Write(contents)
+	
+	
+	if write_err != nil {
+		fmt.Println(write_err.Error())
+	}
+
+	
+	fmt.Println(num)
+}
+
